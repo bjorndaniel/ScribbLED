@@ -30,10 +30,10 @@ def hello(username):
     npixel.setPixel(int(username), 0xff,0xff,0xff)
     npixel.showPixels()
     return "Hello {0}.  Welcome to the Omega World!".format(username)
+@route('/')
+def server_static():
+  return static_file('index.html', root='/home/bottle/static/')
 @route('/<filepath:path>')
 def server_static(filepath):
-    if filepath.find('.') == -1:
-      return static_file(filepath + '.html', root='/home/bottle/static/')
-    else:
-      return static_file(filepath, root='/home/bottle/static/')
+  return static_file(filepath, root='/home/bottle/static/')
 run(host='0.0.0.0', port=8080, debug=True)
