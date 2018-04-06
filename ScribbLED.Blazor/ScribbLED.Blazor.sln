@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27520.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScribbLED.Blazor", "ScribbLED.Blazor\ScribbLED.Blazor.csproj", "{4874CF06-57F2-43EA-899F-F3BDC1C9F7AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4874CF06-57F2-43EA-899F-F3BDC1C9F7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4874CF06-57F2-43EA-899F-F3BDC1C9F7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4874CF06-57F2-43EA-899F-F3BDC1C9F7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4874CF06-57F2-43EA-899F-F3BDC1C9F7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AE703FE-B20D-4EC7-BB9E-61FD5F87CB54}
+	EndGlobalSection
+EndGlobal
