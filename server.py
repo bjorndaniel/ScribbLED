@@ -35,7 +35,20 @@ def lightsOff():
     status = npixel.showPixels()
     count = count +1
     time.sleep(0.05)
-
+@route('/draw', method='POST')
+def draw():
+  data = request.json
+  for l in data:
+    led = l['Led']
+    colors = l['Color'].split(';')
+    npixel.setPixel(int(led), stringToHex(colors[0]), stringToHex(colors[1]), stringToHex(colors[2]))
+  npixel.showPixels()
+  return "Ok"
+#from https://stackoverflow.com/questions/21879454/how-to-convert-a-hex-string-to-hex-number
+def stringToHex(hexString):
+  hex_int = int(hexString, 16)
+  new_int = hex_int + 0x200
+  return new_int
 lightsOff()
 run(host='0.0.0.0', port=8080, debug=True)
   
